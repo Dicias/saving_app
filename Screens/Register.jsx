@@ -51,7 +51,10 @@ const Register = ({ navigation }) => {
       password: ''
     }}
     validationSchema={RegisterSchema}
-    onSubmit={values => Alert.alert(JSON.stringify(values))}
+    onSubmit={values => {
+      Alert.alert(`Registrado con exito \n Tu correo: ${values.email} \n Tu usuario: ${values.username}`)
+      navigation.navigate('Home')
+      }}
     >
       
       {({values, errors, touched, handleChange,

@@ -50,7 +50,7 @@ const Register = ({ navigation }) => {
       password: ''
     }}
     validationSchema={LoginSchema}
-    onSubmit={values => Alert.alert(JSON.stringify(values))}
+    onSubmit={values = () => navigation.navigate('Home') }
     >
       
       {({values, errors, touched, handleChange,
@@ -75,7 +75,7 @@ const Register = ({ navigation }) => {
       style={[styles.submitBtn,
       {backgroundColor: isValid ? '#772339' : '#28141A'},
       ]}>
-        <StyledText style={styles.submitBtnTxt}> Registrarse </StyledText>  
+        <StyledText style={styles.submitBtnTxt}> Iniciar </StyledText>  
       </TouchableHighlight>
       </View>
     </View>
