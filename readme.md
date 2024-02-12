@@ -1,3 +1,5 @@
+#Fixing...
+
 Palette colors : {
 backgroundMain : '#111418'
 backgroundSecond : '#0C0F01',
