@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, View, TouchableHighlight, StyleSheet } from "react-native";
+import { Button, View, TouchableHighlight, StyleSheet, Image } from "react-native";
 import StyledText from "../src/components/StyledText";
 const Home = ({ navigation }) => {
 
@@ -22,7 +22,19 @@ const Home = ({ navigation }) => {
       marginVertical: 10,
       borderRadius: 15,
       justifyContent: 'center'
-    }
+    },
+    btnContainerNew: {
+      width: '80%',
+      alignItems: 'flex-end',
+      justifyContent: 'center'
+    },
+    btnNew: {
+      width: 40,
+      height: 40,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 50
+    },
   })
 
   return(
@@ -49,11 +61,24 @@ const Home = ({ navigation }) => {
         </View>
       </TouchableHighlight>
       
-        <StyledText fontSize='subheading' color='secondary'
-        > Promedios </StyledText>
-        <Button title=" + " />
-    
+        <StyledText fontSize='subheading' color='secondary'> Promedios </StyledText>
+        <View style={{alignItems: 'center'}}>
+        <Image source={require('../src/images/grafica_example.png')}
+            style={{height: 300, width: 300}} />
+        </View>
+        
+
       </View>
+      <View style={styles.btnContainerNew}>
+        <TouchableHighlight style={[styles.btn, {borderRadius: 200}]}
+        onPress={()=>console.log('btn_new')}
+        >
+        <View style={styles.btnNew}>
+          <StyledText> + </StyledText>
+        </View>
+      </TouchableHighlight>
+      </View>
+
     </View>
   )
 }

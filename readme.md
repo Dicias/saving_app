@@ -1,5 +1,7 @@
 #Fixing...
 
+//Por hacer.- Agregar el menu lateral, crear la tarjeta del menu 
+
 Palette colors : {
 backgroundMain : '#111418'
 backgroundSecond : '#0C0F01',
