@@ -1,8 +1,8 @@
 #Fixing...
 
-/*Por hacer.- Agregar el menu lateral,
- Agregar { DrawerContentScrollView } 
- crear la tarjeta del menu 
+/*Por hacer.- 
+Arreglar las props de navigate para las cards
+Bloquear el acceso del drawer en el start
 
 */
 

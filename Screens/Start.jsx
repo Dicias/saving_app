@@ -1,5 +1,4 @@
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native'
-import React, {useState} from 'react'
+import { View, StyleSheet, TouchableHighlight } from 'react-native' 
 import StyledText from '../src/components/StyledText'
 
 const styles = StyleSheet.create({

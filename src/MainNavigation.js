@@ -32,10 +32,10 @@ const Main = () => {
         
         }}
          >
-        {/*<Stack.Screen 
+        <Stack.Screen 
           name="Inicio"
           component={ Start }
-        />*/}
+        />
           <Stack.Screen 
           name="Home"
           component={ Home }
