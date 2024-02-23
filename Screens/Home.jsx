@@ -63,7 +63,6 @@ const Home = ({ navigation }) => {
             {/*Esto se cambia por una libreria de estadisticas */}
         </View>
         
-
       </View>
       <View style={styles.btnContainerNew}>
         <TouchableHighlight style={[styles.btn, {borderRadius: 200}]}

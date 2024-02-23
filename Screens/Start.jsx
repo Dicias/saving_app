@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#111418',
     alignContent: 'center',
     justifyContent: 'space-evenly',
+    paddingTop: 15
   },
   button:{
     alignItems: 'center',
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     margin: 10,
-    backgroundColor: '#0C0F01',
+    backgroundColor: '#fbca1f',
     color: '#e6e7e7',
     height: 80,
   }
@@ -22,8 +23,14 @@ const styles = StyleSheet.create({
 const Start = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <StyledText fontWeight='bold' style={{fontSize: 30}}
-      > Bienvenido </StyledText>
+      <View>
+        <StyledText>
+          Aqui va el SVG
+        </StyledText>
+      </View>
+      <StyledText fontWeight='bold' style={{fontSize: 30}}>
+         Bienvenido
+      </StyledText>
       <StyledText style={{fontSize: 12}}
       > Selecciona ingresar si ya cuentas con una cuenta </StyledText>
       <StyledText style={{fontSize: 12}}

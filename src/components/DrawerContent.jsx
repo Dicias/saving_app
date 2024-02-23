@@ -20,9 +20,6 @@ const styles = StyleSheet.create({
     return(
         <View style={styles.container}>
         <DrawerContentScrollView {...props} >
-        <StyledText fontSize='subheading'>
-        Consulta otros usuarios    
-        </StyledText>
         <View>    
             {users.map(user => 
             <DrawerCard 
