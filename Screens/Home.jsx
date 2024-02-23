@@ -15,6 +15,7 @@ const Home = ({ navigation }) => {
       padding: 10,
       borderRadius: 20,
       width: '90%',
+      height: '80%'
     },
     btn:{
       backgroundColor: '#772339',
@@ -40,13 +41,7 @@ const Home = ({ navigation }) => {
   return(
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
-      
-      <TouchableHighlight style={styles.btn} onPress={()=>console.log('Menu btn')}> 
-        <View>
-          <StyledText fontSize='subheading' >Menu</StyledText>
-        </View>
-      </TouchableHighlight>
-      
+
       <TouchableHighlight style={styles.btn}>
       <View style={{alignItems: 'center'}}>
         <StyledText> Total de gastos del mes:</StyledText>
@@ -65,6 +60,7 @@ const Home = ({ navigation }) => {
         <View style={{alignItems: 'center'}}>
         <Image source={require('../src/images/grafica_example.png')}
             style={{height: 300, width: 300}} />
+            {/*Esto se cambia por una libreria de estadisticas */}
         </View>
         
 

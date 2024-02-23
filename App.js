@@ -2,7 +2,6 @@ import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import DrawerNavigation from './src/DrawerNavigation';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Main from './src/MainNavigation';
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {

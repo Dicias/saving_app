@@ -6,6 +6,7 @@ import Login from "../Screens/Login";
 import Register from "../Screens/Register";
 import Start from "../Screens/Start";
 import Icon from 'react-native-vector-icons/Entypo';
+import Expenses from "../Screens/Expenses";
 
 
 const Main = () => {
@@ -35,6 +36,7 @@ const Main = () => {
         <Stack.Screen 
           name="Inicio"
           component={ Start }
+          options={{headerShown : false}}
         />
           <Stack.Screen 
           name="Home"
@@ -43,10 +45,16 @@ const Main = () => {
           <Stack.Screen 
           name="Login"
           component={ Login }
+          options={{headerShown : false}}
           />
           <Stack.Screen 
           name="Register"
           component={ Register }
+          options={{headerShown : false}}
+          />
+          <Stack.Screen 
+          name="Expenses"
+          component={ Expenses }
           />
         </Stack.Navigator>
     )

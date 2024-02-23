@@ -1,9 +1,9 @@
 #Fixing...
 
 /*Por hacer.- 
-Arreglar las props de navigate para las cards
-Bloquear el acceso del drawer en el start
-
+Cambiar el menu del drawer
+Agregar screen de Ahorros / stats
+Buscar libreria de Stats
 */
 
 Palette colors : {

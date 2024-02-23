@@ -2,9 +2,7 @@ import React from "react";
 import { View , TouchableOpacity, StyleSheet } from 'react-native';
 import StyledText from "./StyledText";
 import Icon  from "react-native-vector-icons/FontAwesome5";
-import Expenses from "../../Screens/Expenses";
-
-export default function DrawerCard({navigation, username, id}){
+export default function DrawerCard({navigation,username, id}){
 
 const styles = StyleSheet.create({
     container:{
@@ -25,7 +23,7 @@ const styles = StyleSheet.create({
     <View>
     <TouchableOpacity 
     style={styles.container}
-    //onPress={{/*()=> navigation.navigate('Expenses')*/ }}
+    onPress={()=> navigation.navigate('Expenses') }
     >
         <View>
         <Icon 
